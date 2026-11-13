@@ -1,0 +1,18 @@
+/* ستايل صفحة All Projects فقط - مبيغيرش في ستايل الصفحة الرئيسية */
+.all-projects-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.all-projects-page .projects {
+  flex: 1;
+  padding-top: 100px !important;
+}
+@media (max-width: 767px) {
+  .projects.all-projects .card-info {
+    display: block;
+  }
+}
+ img{
+  object-fit: cover;
+}

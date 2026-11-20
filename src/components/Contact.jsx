@@ -11,7 +11,6 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
 
-  // نفس لوجيك الـ main.js: فاليديشن وبعدين فتح واتساب
   function handleSubmit(e) {
     e.preventDefault();
     const newErrors = { name: "", email: "", message: "" };

@@ -560,3 +560,33 @@ a{
     opacity: 0.6;
   }
 }
+
+.skills .marquee {
+  overflow: hidden;
+  padding: 30px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.skills .marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+.skills .marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.skills .marquee-item {
+  flex: 0 0 auto;
+  width: 180px;
+  margin-right: 16px;
+}
+.skills .marquee-item .box {
+  white-space: nowrap;
+}
+body:not(.light-mode) .skills .marquee img.nextjs {
+  filter: invert(1);
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% / 3)); }
+}

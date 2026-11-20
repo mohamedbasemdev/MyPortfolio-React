@@ -5,7 +5,6 @@ const texts = ["Frontend Developer", "Web Designer"];
 function Landing({ imageRef }) {
   const [typedText, setTypedText] = useState("Frontend Developer");
 
-  // نفس لوجيك تأثير الكتابة بالظبط
   useEffect(() => {
     let currentIndex = 0;
     let charIndex = 0;
@@ -72,8 +71,10 @@ function Landing({ imageRef }) {
             </a>
           </div>
           <div style={{ transitionDelay: ".7s" }} className="buttons reveul">
-            <a href="#projects">
-              <div className="btn main-btn first">View My Work</div>
+            <a href="Mohamed_Basem_CV_Frontend.pdf" download>
+              <div className="btn main-btn first">
+                <i className="fa-solid fa-download text-light"></i> Download CV
+              </div>
             </a>
             <a href="#contact">
               <div className="btn main-btn second">Contact Me</div>

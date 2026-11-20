@@ -45,7 +45,6 @@ export const projects = [
   },
 ];
 
-// أول 3 مشاريع بتظهر في الصفحة الرئيسية، والباقي في صفحة More Projects
 export const FEATURED_COUNT = 3;
 export const featuredProjects = projects.slice(0, FEATURED_COUNT);
 export const moreProjects = projects.slice(FEATURED_COUNT);
